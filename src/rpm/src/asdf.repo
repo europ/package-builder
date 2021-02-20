@@ -1,0 +1,11 @@
+[asdf]
+name=Asdf Repository
+baseurl=https://yum.asdf.com/main
+enabled=1
+gpgcheck=0
+
+[asdf-other]
+name=Asdf Repository - Other
+baseurl=https://yum.asdf.com/other
+enabled=1
+gpgcheck=0

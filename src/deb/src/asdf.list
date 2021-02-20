@@ -1,0 +1,5 @@
+deb https://deb.asdf.com/main stable asdf
+deb https://deb.asdf.com/other stable asdf-other
+
+deb-src https://deb.asdf.com/main stable asdf
+deb-src https://deb.asdf.com/other stable asdf-other

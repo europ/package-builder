@@ -1,0 +1,5 @@
+Package: asdf
+Version: 0.0.1
+Maintainer: Asdf
+Architecture: all
+Description: Asdf repository installer.
