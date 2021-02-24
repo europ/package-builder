@@ -1,4 +1,4 @@
-version: '3.7'
+version: '3.8'
 services:
 
   rpm:
@@ -6,15 +6,17 @@ services:
       dockerfile: ./docker/rpm/Dockerfile
       context: .
     volumes:
+      - ./src/rpm/entrypoint.sh:/entrypoint.sh
       - ./src/rpm/src:/src
       - ./build:/build
-    command: /bin/sh -c "entrypoint.sh"
+    command: /bin/sh -c /entrypoint.sh
 
   deb:
     build:
       dockerfile: ./docker/deb/Dockerfile
       context: .
     volumes:
+      - ./src/deb/entrypoint.sh:/entrypoint.sh
       - ./src/deb/src:/src
       - ./build:/build
-    command: /bin/sh -c "entrypoint.sh"
+    command: /bin/sh -c /entrypoint.sh
